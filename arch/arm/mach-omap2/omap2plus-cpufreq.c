@@ -523,7 +523,7 @@ static int __init omap_cpufreq_init(void)
 {
 	int ret;
 
-	oc_val = 2;
+	oc_val = 0;
 
 	if (cpu_is_omap24xx())
 		mpu_clk_name = "virt_prcm_set";
