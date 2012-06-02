@@ -390,6 +390,13 @@ config OMAP4_PPA_CPU1_ONLINE_BUG
 	  If, on the other hand, you do not understand the change, leave the
 	  default as enabled.
 
+config OMAP_OVERRIDE_MPUTRIM
+	bool "Override factory-set trim value for MPU DPLL clock"
+	default n
+	help
+	  Override factory-set trim value for MPU DPLL to allow locking at 
+	  rates >2.4GHz (required for MPU frequencies >1.2GHz).
+
 endmenu
 
 endif
